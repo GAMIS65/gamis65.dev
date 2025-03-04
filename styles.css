@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Geist Mono', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+	color: #333;
+	background-color: white;
+}
+
+main {
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 3rem 1rem;
+}
+
+h1 {
+	font-size: 36px;
+	margin-bottom: 1.5rem;
+}
+
+p {
+	font-size: 16px;
+	margin-bottom: 0.5rem;
+	line-height: 1.75;
+}
+
+.mb-20 {
+	margin-bottom: 1.5rem;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+.button {
+	padding: 0.25rem 0.5rem;
+	border-radius: 0.25rem;
+	transition: background-color 0.2s;
+}
+
+.green {
+	background-color: #dcfce7;
+	color: #16a34a;
+}
+
+.green:hover {
+	background-color: #bbf7d0;
+	text-decoration: none;
+}
+
+.purple {
+	background-color: #f3e8ff;
+	color: #9333ea;
+}
+
+.purple:hover {
+	background-color: #e9d5ff;
+	text-decoration: none;
+}
+
+.blue {
+	background-color: #dbeafe;
+	color: #2563eb;
+}
+
+.blue:hover {
+	background-color: #bfdbfe;
+	text-decoration: none;
+}
+
+.pink {
+	background-color: #fce7f3;
+	color: #db2777;
+}
+
+.pink:hover {
+	background-color: #fbcfe8;
+	text-decoration: none;
+}
+
+.yellow {
+	background-color: rgba(255, 159, 67, 0.2);
+	color: #FF9F43;
+}
+
+.yellow:hover {
+	background-color: rgba(255, 159, 67, 0.4);
+	text-decoration: none;
+}
+
+@media (max-width: 640px) {
+	h1 {
+		font-size: 2.5rem;
+	}
+}
