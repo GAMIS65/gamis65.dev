@@ -1,0 +1,35 @@
+---
+const colors = ['green', 'purple', 'blue', 'pink', 'yellow'] as const;
+type Color = (typeof colors)[number];
+
+interface Props {
+  color?: Color;
+  href?: string;
+}
+
+const { color: rawColor, href }: Props = Astro.props;
+
+const color: Color = rawColor ?? 'blue';
+
+const styles: Record<Color, string> = {
+  green: 'bg-green-100 text-green-600 hover:bg-green-200',
+  purple: 'bg-purple-100 text-purple-600 hover:bg-purple-200',
+  blue: 'bg-blue-100 text-blue-600 hover:bg-blue-200',
+  pink: 'bg-pink-100 text-pink-600 hover:bg-pink-200',
+  yellow: 'bg-orange-100 text-orange-500 hover:bg-orange-200',
+};
+
+const classes = `inline-block px-2 py-1 rounded-sm transition-colors ${styles[color]}`;
+---
+
+{
+  href ? (
+    <a href={href} class={classes}>
+      <slot />
+    </a>
+  ) : (
+    <span class={classes}>
+      <slot />
+    </span>
+  )
+}

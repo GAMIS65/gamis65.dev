@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&display=swap');
+@import "tailwindcss";
+
+body {
+	font-family: 'Geist Mono', monospace;
+	@apply text-gray-800 bg-white;
+}
+
+main {
+	@apply max-w-[800px] mx-auto px-4 py-12;
+}
+
+h1 {
+	@apply text-4xl font-bold;
+}
+
+p {
+	@apply text-lg leading-[1.75];
+}
