@@ -1,0 +1,51 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Badge from '../components/Badge.astro';
+import ChineseFlag from '../assets/cn.svg';
+import PolishFlag from '../assets/pl.svg';
+---
+
+<html lang="en">
+  <head><BaseHead /> </head>
+  <body>
+    <main>
+      <h1>GAMIS65</h1>
+      <nav>
+        <ul class="flex gap-4 mt-4">
+          <li>
+            <Badge color="purple" href="https://github.com/gamis65"
+              >GitHub</Badge
+            >
+          </li>
+          <li>
+            <Badge color="blue" href="/blog">Blog</Badge>
+          </li>
+          <li>
+            <Badge color="yellow" href="/projects">Projects</Badge>
+          </li>
+          <li>
+            <Badge color="green" href="/photos">Photos</Badge>
+          </li>
+        </ul>
+      </nav>
+
+      <p class="mt-4">
+        Hey! I'm GAMIS65, a dude who works on open source stuff sometimes.
+      </p>
+
+      <p class="mt-4">
+        My interests include coding, traveling, touch typing, FPS games,
+        tweaking my Neovim config, and language learning
+        <ChineseFlag class="w-5 h-5 inline align-middle" />
+        <PolishFlag class="w-5 h-5 inline align-middle" />.
+      </p>
+
+      <p class="mt-6">
+        Currently I'm working on
+        <Badge color="pink" href="https://layoutmaster.app">LayoutMaster</Badge
+        >, a website for learning touch typing, and alternative kayboard
+        layouts.
+      </p>
+    </main>
+  </body>
+</html>
